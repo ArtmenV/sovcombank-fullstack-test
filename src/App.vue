@@ -50,8 +50,6 @@ body {
 }
 
 button,
-input,
-select,
 fieldset {
   outline: none;
   border: none;
