@@ -301,7 +301,7 @@ export default {
   background-color: #e3f4fe;
 }
 
-#realEstate, #footageEnd {
+#realEstate, #footageEnd, #search {
   margin-right: 0;
 }
 
