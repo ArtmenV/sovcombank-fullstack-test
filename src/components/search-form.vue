@@ -245,7 +245,7 @@ export default {
 
   methods: {
     submitHandler() {
-      console.log('event', this.form);
+      console.log('form', this.form);
     },
 
     changeTypeSearch(typeSearch) {
