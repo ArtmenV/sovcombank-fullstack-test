@@ -62,7 +62,7 @@
           <label for="priceStart" />
           <input
             v-model="form.priceStart"
-            class="search-form__item"
+            class="search-form__item search-form__item_background-color"
             type="text"
             placeholder="От"
             id="priceStart"
@@ -71,7 +71,7 @@
           <label for="priceEnd" />
           <input
             v-model="form.priceEnd"
-            class="search-form__item"
+            class="search-form__item search-form__item_background-color"
             type="text"
             placeholder="До"
             id="priceEnd"
@@ -80,7 +80,7 @@
           <label for="payment"></label>
           <select
             v-model="form.paymentForPeriod"
-            class="search-form__item"
+            class="search-form__item search-form__item_background-color"
             id="payment"
           >
             <option
@@ -110,7 +110,7 @@
           <label for="footageStart" />
           <input
             v-model="form.footageStart"
-            class="search-form__item"
+            class="search-form__item search-form__item_background-color"
             placeholder="От"
             type="text"
             id="footageStart"
@@ -119,7 +119,7 @@
           <label for="footageEnd" />
           <input
             v-model="form.footageEnd"
-            class="search-form__item"
+            class="search-form__item search-form__item_background-color"
             placeholder="До"
             type="text"
             id="footageEnd"
@@ -297,8 +297,12 @@ export default {
   margin-right: 4px;
 }
 
-.search-form__item:not(:last-child) {
-  margin-right: 4px;
+.search-form__item_background-color {
+  background-color: #e3f4fe;
+}
+
+#realEstate, #footageEnd {
+  margin-right: 0;
 }
 
 .search-form__price {
@@ -310,10 +314,6 @@ export default {
 .search-form__footage {
   display: flex;
   width: 35%;
-}
-
-.search-form__footage .search-form__item:nth-child(4) {
-  margin-right: 0;
 }
 
 .search-form__amount {
